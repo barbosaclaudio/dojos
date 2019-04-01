@@ -14,12 +14,7 @@ public class Mapping {
 
     @Test
     public void mapearPessoasPorTipo() {
-        List<Pessoa> pessoas = PessoaUtils.obterPessoas();
-        Map<String, List<Pessoa>> collect = pessoas.stream().collect(Collectors.groupingBy(Pessoa::getTipo));
-        Assertions.assertEquals(24, collect.get("NA").size());
-        Assertions.assertEquals(27, collect.get("CLT").size());
-        Assertions.assertEquals(25, collect.get("PJ").size());
-        Assertions.assertEquals(24, collect.get("SUBLOGIN").size());
+
     }
 
 }
